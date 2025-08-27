@@ -1,0 +1,8 @@
+echo "\n 🔨 type check first..."
+npm run type-check
+
+echo "\n 🔨 lint-staged..."
+npx lint-staged
+
+echo "\n 🔨 Running production build before push..."
+npm run build

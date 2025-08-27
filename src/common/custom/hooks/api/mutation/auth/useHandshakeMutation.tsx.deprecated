@@ -1,0 +1,44 @@
+import { UserCredential } from "firebase/auth";
+
+import { IBaseMutationProps } from "@/common/interfaces/baseMutationProps";
+import { IBaseResponse } from "@/common/interfaces/baseResponse";
+import { IHTTPMethod } from "@/common/interfaces/enum/httpMethod.enum";
+import { IAuthState, useAuthStore } from "@/contexts/store/authStore";
+
+import { IEndpointAuth } from "../../endpoints/auth.endpoint.enum";
+import IFetcherKey from "../../fetcher/fetchKey";
+import useHandleMutation from "../../useHandleMutation.tsx.deprecated";
+
+export type IHandshakeMutationReponse = { accessToken: string };
+export interface IHandshakeMutationRequest
+  extends Pick<UserCredential["user"], "uid" | "email" | "phoneNumber"> {
+  name: string;
+
+  signInProvider: string;
+  refreshToken: string;
+  token: string; //firebase Token
+}
+
+const useHandshakeMutation = (
+  props?: IBaseMutationProps<IAuthState["user"] & IHandshakeMutationReponse>,
+) => {
+  const { setUserByToken, user } = useAuthStore();
+
+  return useHandleMutation<
+    IBaseResponse<IHandshakeMutationReponse>,
+    IHandshakeMutationRequest
+  >({
+    method: IHTTPMethod.POST,
+    url: IEndpointAuth.HANDSHAKE,
+    onSuccessMessage: "",
+    onSuccessCallback: (response) => {
+      const { accessToken } = response.data;
+      setUserByToken(accessToken);
+      if (user) props?.onSuccessCallback?.({ ...user, accessToken });
+    },
+    onErrorMessage: "Oops! Your login fail, please contact us.",
+    refetchKey: IFetcherKey.PROFILE,
+  });
+};
+
+export default useHandshakeMutation;

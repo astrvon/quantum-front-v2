@@ -1,0 +1,26 @@
+// ! Please put new key at the lowest ! //
+
+enum IFetcherKey {
+  OAUTH,
+  PROFILE,
+  ROLE,
+  USER,
+  SCOPE,
+  BANK_TYPE,
+  USER_CONTACT,
+  USER_TAX_PROFILE,
+  USER_BANK_ACCOUNT,
+  COMPANY,
+  COMPANY_CATEGORY,
+  BANK_ACCOUNT,
+  CONTACT,
+  TAX,
+  VESSEL,
+  VESSEL_TYPE,
+  VESSEL_SHIFT_SESSION,
+  CUSTOMER,
+  VESSEL_PHOTO,
+  CUSTOMER_TYPE,
+}
+
+export default IFetcherKey;

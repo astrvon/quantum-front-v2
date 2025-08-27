@@ -1,0 +1,25 @@
+networks:
+  default:
+    name: prd-net
+    external: true
+
+services:
+  quantum-one-admin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GIT_TOKEN: ${GIT_TOKEN}
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.quantum-one-admin.entrypoints=web,web-secure"
+      - "traefik.http.routers.quantum-one-admin.middlewares=webHeaders@file"
+      - "traefik.http.routers.quantum-one-admin.rule=Host(`admin-one.quantum-pesonadunia.com`)"
+      - "traefik.http.routers.quantum-one-admin.tls=true"
+      - "traefik.http.routers.quantum-one-admin.tls.certresolver=letsencrypt"
+      - "traefik.http.services.quantum-one-admin.loadbalancer.server.port=3001"
