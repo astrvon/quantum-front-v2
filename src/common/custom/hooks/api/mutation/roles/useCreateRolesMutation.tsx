@@ -13,7 +13,7 @@ import useHandleMutation from "../../useHandleMutation";
 export type ICreateRoleMutationReponse = { message: string; role: IRole };
 
 const useCreateRoleMutation = (
-  props?: IBaseMutationProps<ICreateRoleMutationReponse>,
+  props?: IBaseMutationProps<ICreateRoleMutationReponse>
 ) => {
   return useHandleMutation<
     IBaseResponse<ICreateRoleMutationReponse>,

@@ -1,4 +1,4 @@
-import { IEndpointUserTaxProfile } from "@/common/customHooks/api/endpoints/user-tax-profile.endpoint.enum";
+import { IEndpointUserTaxProfile } from "@/common/custom/hooks/api/endpoints/user-tax-profile.endpoint.enum";
 import { IUserTaxProfile } from "@/common/interfaces/data/userTaxProfile";
 
 import useHandleFetcher from "../../useHandleFetcher";

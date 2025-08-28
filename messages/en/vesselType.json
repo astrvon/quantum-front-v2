@@ -1,0 +1,64 @@
+{
+  "vesselTypePage": {
+    "title": "Vessel Type",
+    "searchPlaceholder": "Search by name / vessel type code...",
+    "columns": {
+      "no": "No",
+      "name": "Name",
+      "vesselTypeCode": "Code",
+      "description": "Description",
+      "lastNumber": "Last Number",
+      "status": "Status",
+      "createdBy": "Created By",
+      "updatedBy": "Updated By",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "action": "Action"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "tooltip": {
+      "activate": "Activate vessel type",
+      "deactivate": "Deactivate vessel type",
+      "delete": "Delete vessel type"
+    },
+    "popconfirm": {
+      "deleteTitle": "Are you sure you want to delete this vessel type?",
+      "ok": "Yes",
+      "cancel": "Cancel"
+    }
+  },
+  "modalVesselType": {
+    "title": {
+      "add": "Add Vessel Type",
+      "update": "Update Vessel Type"
+    },
+    "tooltip": {
+      "add": "Add Vessel Type",
+      "update": "Update Vessel Type"
+    },
+    "form": {
+      "name": {
+        "label": "Name",
+        "required": "Name is required",
+        "placeholder": "Enter vessel type name"
+      },
+      "vesselTypeCode": {
+        "label": "Code",
+        "placeholder": "Enter vessel type code"
+      },
+      "description": {
+        "label": "Description",
+        "placeholder": "Enter description"
+      },
+      "lastNumber": {
+        "label": "Last Number",
+        "placeholder": "Enter last number"
+      },
+      "submit": "Submit"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "RolePage": {
+    "title": "Role Management",
+    "tabs": {
+      "searchPlaceholder": "Search by name, description",
+      "columns": {
+        "no": "No",
+        "name": "Name",
+        "description": "Description",
+        "status": "Status",
+        "scope": "Scope",
+        "totalUser": "Total User",
+        "totalRead": "Total Read permission",
+        "totalWrite": "Total Write permission",
+        "totalUpdate": "Total Update permission",
+        "totalDelete": "Total Delete permission",
+        "createdAt": "Created At",
+        "updatedAt": "Updated At",
+        "deletedAt": "Deleted At",
+        "action": "Action"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "tooltip": {
+        "activate": "Activate",
+        "deactivate": "Deactivate",
+        "delete": "Delete"
+      },
+      "popconfirm": {
+        "deleteTitle": "Are you sure you want to delete this role?",
+        "ok": "Yes",
+        "cancel": "No"
+      }
+    },
+    "modal": {
+      "addRole": "Add Role",
+      "title": "Create New Role",
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Role name (unique)",
+          "required": "Name is required"
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Description role (optional)"
+        },
+        "scopes": {
+          "label": "Scopes",
+          "select": "Select scope",
+          "addScopeBtn": "Add Scope",
+          "newScopeInput": "Add new",
+          "addNewScopeBtn": "Add",
+          "scopeRequired": "Scope is required",
+          "permissionRequired": "Select at least one permission",
+          "duplicateWarning": "Duplicate scopes detected. Please ensure each scope is unique."
+        },
+        "permissions": {
+          "READ": "READ",
+          "WRITE": "WRITE",
+          "UPDATE": "UPDATE",
+          "DELETE": "DELETE",
+          "tooltips": {
+            "READ": "Allows users to view or access the data without making changes.",
+            "WRITE": "Allows users to add or submit new data into the system.",
+            "UPDATE": "Allows users to modify or edit existing data.",
+            "DELETE": "Allows users to permanently remove data from the system."
+          }
+        },
+        "submit": "Create Role"
+      }
+    },
+    "addScope": {
+      "button": "Add Scope",
+      "title": "Create New Scope",
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter scope name",
+          "required": "Name is required"
+        },
+        "submit": "Create Scope"
+      }
+    },
+    "detailRole": {
+      "button": {
+        "label": "{count} scopes"
+      },
+      "modal": {
+        "title": "Scope Details of {name}",
+        "searchPlaceholder": "search by name, actions",
+        "table": {
+          "no": "No",
+          "name": "Name",
+          "actions": "Actions"
+        }
+      }
+    },
+    "updateRole": {
+      "tooltip": "Edit Role",
+      "title": "Update role: {name}",
+      "form": {
+        "name": {
+          "label": "Name"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "scope": {
+          "placeholder": "Select scope",
+          "required": "Scope is required"
+        },
+        "permissions": {
+          "required": "Select at least one permission",
+          "tooltip": "Permission: {action}"
+        },
+        "addScope": {
+          "button": "Add Scope",
+          "inputPlaceholder": "Add new"
+        },
+        "duplicateWarning": "Duplicate scopes detected. Please ensure each scope is unique.",
+        "submit": "Update Role"
+      }
+    },
+    "updateScope": {
+      "tooltip": "Edit Scope",
+      "title": "Updating scope {name}",
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter scope name"
+        },
+        "submit": "Update Scope"
+      }
+    },
+    "scopeTabs": {
+      "searchPlaceholder": "Search by name, description",
+      "columns": {
+        "no": "No",
+        "name": "Name",
+        "action": "Action"
+      },
+      "tooltip": {
+        "delete": "Delete"
+      },
+      "popconfirm": {
+        "deleteTitle": "Are you sure you want to delete this scope?",
+        "ok": "Yes",
+        "cancel": "No"
+      }
+    }
+  }
+}

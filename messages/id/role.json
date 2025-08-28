@@ -1,0 +1,155 @@
+{
+  "RolePage": {
+    "title": "Manajemen Peran",
+    "tabs": {
+      "searchPlaceholder": "Cari berdasarkan nama, deskripsi",
+      "columns": {
+        "no": "No",
+        "name": "Nama",
+        "description": "Deskripsi",
+        "status": "Status",
+        "scope": "Scope",
+        "totalUser": "Total Pengguna",
+        "totalRead": "Total Izin Baca",
+        "totalWrite": "Total Izin Tulis",
+        "totalUpdate": "Total Izin Ubah",
+        "totalDelete": "Total Izin Hapus",
+        "createdAt": "Dibuat Pada",
+        "updatedAt": "Diperbarui Pada",
+        "deletedAt": "Dihapus Pada",
+        "action": "Aksi"
+      },
+      "status": {
+        "active": "Aktif",
+        "inactive": "Tidak Aktif"
+      },
+      "tooltip": {
+        "activate": "Aktifkan",
+        "deactivate": "Nonaktifkan",
+        "delete": "Hapus"
+      },
+      "popconfirm": {
+        "deleteTitle": "Apakah kamu yakin ingin menghapus peran ini?",
+        "ok": "Ya",
+        "cancel": "Tidak"
+      }
+    },
+    "modal": {
+      "addRole": "Tambah Peran",
+      "title": "Buat Peran Baru",
+      "form": {
+        "name": {
+          "label": "Nama",
+          "placeholder": "Nama peran (unik)",
+          "required": "Nama wajib diisi"
+        },
+        "description": {
+          "label": "Deskripsi",
+          "placeholder": "Deskripsi peran (opsional)"
+        },
+        "scopes": {
+          "label": "Scope",
+          "select": "Pilih scope",
+          "addScopeBtn": "Tambah Scope",
+          "newScopeInput": "Tambah baru",
+          "addNewScopeBtn": "Tambah",
+          "scopeRequired": "Scope wajib diisi",
+          "permissionRequired": "Pilih minimal satu permission",
+          "duplicateWarning": "Terdeteksi scope yang sama. Mohon pastikan setiap scope unik."
+        },
+        "permissions": {
+          "READ": "BACA",
+          "WRITE": "TULIS",
+          "UPDATE": "UBAH",
+          "DELETE": "HAPUS",
+          "tooltips": {
+            "READ": "Izinkan pengguna melihat atau mengakses data tanpa mengubahnya.",
+            "WRITE": "Izinkan pengguna menambahkan data ke sistem.",
+            "UPDATE": "Izinkan pengguna mengubah data yang sudah ada.",
+            "DELETE": "Izinkan pengguna menghapus data secara permanen dari sistem."
+          }
+        },
+        "submit": "Buat Peran"
+      }
+    },
+    "detailRole": {
+      "button": {
+        "label": "{count} scope"
+      },
+      "modal": {
+        "title": "Detail scope {name}",
+        "searchPlaceholder": "cari berdasarkan nama, aksi",
+        "table": {
+          "no": "No",
+          "name": "Nama",
+          "actions": "Aksi"
+        }
+      }
+    },
+    "updateRole": {
+      "tooltip": "Edit Peran",
+      "title": "Perbarui peran: {name}",
+      "form": {
+        "name": {
+          "label": "Nama"
+        },
+        "description": {
+          "label": "Deskripsi"
+        },
+        "scope": {
+          "placeholder": "Pilih scope",
+          "required": "Scope wajib diisi"
+        },
+        "permissions": {
+          "required": "Pilih minimal satu permission",
+          "tooltip": "Akses: {action}"
+        },
+        "addScope": {
+          "button": "Tambah Scope",
+          "inputPlaceholder": "Tambah baru"
+        },
+        "duplicateWarning": "Terdapat duplikasi scope. Pastikan setiap scope unik.",
+        "submit": "Perbarui Peran"
+      }
+    },
+    "addScope": {
+      "button": "Tambah Scope",
+      "title": "Buat Scope Baru",
+      "form": {
+        "name": {
+          "label": "Nama",
+          "placeholder": "Masukkan nama scope",
+          "required": "Nama wajib diisi"
+        },
+        "submit": "Buat Scope"
+      }
+    },
+    "updateScope": {
+      "tooltip": "Ubah Scope",
+      "title": "Perbarui scope {name}",
+      "form": {
+        "name": {
+          "label": "Nama",
+          "placeholder": "Masukkan nama scope"
+        },
+        "submit": "Perbarui Scope"
+      }
+    },
+    "scopeTabs": {
+      "searchPlaceholder": "Cari berdasarkan nama, deskripsi",
+      "columns": {
+        "no": "No",
+        "name": "Nama",
+        "action": "Aksi"
+      },
+      "tooltip": {
+        "delete": "Hapus"
+      },
+      "popconfirm": {
+        "deleteTitle": "Apakah kamu yakin ingin menghapus scope ini?",
+        "ok": "Ya",
+        "cancel": "Tidak"
+      }
+    }
+  }
+}

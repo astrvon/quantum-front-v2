@@ -1,4 +1,4 @@
-import { IEndpointUserContact } from "@/common/customHooks/api/endpoints/user-contact.endpoint.enum";
+import { IEndpointUserContact } from "@/common/custom/hooks/api/endpoints/user-contact.endpoint.enum";
 import { IUserContact } from "@/common/interfaces/data/userContact";
 
 import useHandleFetcher from "../../useHandleFetcher";

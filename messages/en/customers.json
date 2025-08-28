@@ -1,0 +1,255 @@
+{
+  "customersPage": {
+    "title": "Customers",
+    "search": "Search customers",
+    "button": {
+      "add": "Add Customer"
+    },
+    "tooltip": {
+      "delete": "Delete",
+      "activate": "Activate",
+      "deactivate": "Deactivate"
+    },
+    "popconfirm": {
+      "title": { "delete": "Delete Customer" },
+      "description": { "delete": "Are you sure to delete this customer?" },
+      "text": {
+        "delete": {
+          "ok": "Yes",
+          "cancel": "No"
+        }
+      }
+    },
+    "table": {
+      "name": "Name",
+      "bankAccount": "Bank Account",
+      "contact": "Contact",
+      "taxInformation": "Tax Information",
+      "users": "Users",
+      "type": "Type",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "actions": "Actions",
+      "data": {
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    }
+  },
+  "modalAddBankAccount": {
+    "title": "Add Bank Account",
+    "form": {
+      "holderName": "Holder Name",
+      "accountNumber": "Account Number",
+      "bankType": { "label": "Bank Type", "placeholder": "Select bank type" },
+      "submit": "Add Bank Account"
+    },
+    "tooltip": {
+      "title": "Add Bank Account"
+    }
+  },
+  "modalAddCustomer": {
+    "button": "Add Customer",
+    "title": "Add Customer",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter customer name",
+        "requiredMessage": "Name is required"
+      },
+      "type": {
+        "label": "Customer Type",
+        "placeholder": "Select customer type (optional)"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Enter city",
+        "requiredMessage": "City is required"
+      },
+      "address1": {
+        "label": "Address Line 1",
+        "placeholder": "e.g. Jl. Ir. Jend. Soekarno No. 13"
+      },
+      "address2": {
+        "label": "Address Line 2",
+        "placeholder": "e.g. Apartment, Suite, Unit, etc."
+      },
+      "zipCode": {
+        "label": "Zip Code",
+        "placeholder": "e.g. 12345"
+      },
+      "phoneNumber": {
+        "label": "Phone Number",
+        "placeholder": "e.g. 081234567890",
+        "requiredMessage": "Number is required"
+      },
+      "submit": "Add Customer"
+    }
+  },
+  "modalBankAccountDetail": {
+    "title": "Bank Account Detail",
+    "search": "Search bank account",
+    "description": {
+      "holderName": "Holder Name",
+      "accountNumber": "Account Number",
+      "status": {
+        "label": "Status",
+        "data": {
+          "active": "Active",
+          "inactive": "Inactive"
+        }
+      }
+    },
+    "tooltip": {
+      "status": {
+        "active": "Activate",
+        "inactive": "Deactivate"
+      },
+      "delete": "Delete"
+    },
+    "popconfirm": {
+      "title": "Delete Bank Account",
+      "description": "Are you sure to delete this bank account?",
+      "ok": "Yes",
+      "cancel": "No"
+    }
+  },
+  "modalContactDetail": {
+    "title": "Contact Detail",
+    "description": {
+      "name": "Name",
+      "city": "City",
+      "address1": "Address 1",
+      "address2": "Address 2",
+      "zipCode": "Zip Code",
+      "phoneNumber": "Phone Number"
+    }
+  },
+  "modalTaxInformationDetail": {
+    "title": "Tax Information Detail",
+    "description": {
+      "npwp": "NPWP",
+      "fgPpn": "FGPPN",
+      "nppkp": "NPPKP"
+    }
+  },
+  "modalUpdateBankAccount": {
+    "title": "Update Bank Account",
+    "form": {
+      "holderName": "Holder Name",
+      "accountNumber": "Account Number",
+      "bankType": { "label": "Bank Type", "placeholder": "Select bank type" },
+      "submit": "Update"
+    }
+  },
+  "modalUpdateCustomer": {
+    "title": "Update Customer",
+    "tooltip": "Update Customer",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter customer name"
+      },
+      "type": {
+        "label": "Customer Type",
+        "placeholder": "Select customer type (optional)"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Enter city"
+      },
+      "address1": {
+        "label": "Address Line 1",
+        "placeholder": "e.g. Jl. Ir. Jend. Soekarno No. 13"
+      },
+      "address2": {
+        "label": "Address Line 2",
+        "placeholder": "e.g. Apartment, Suite, Unit, etc."
+      },
+      "zipCode": {
+        "label": "Zip Code",
+        "placeholder": "e.g. 12345"
+      },
+      "phoneNumber": {
+        "label": "Phone Number",
+        "placeholder": "e.g. 081234567890"
+      },
+      "submit": "Update Customer"
+    }
+  },
+  "modalUpdateContact": {
+    "title": "Update Contact",
+    "form": {
+      "city": {
+        "label": "City",
+        "placeholder": "Enter city"
+      },
+      "address1": {
+        "label": "Address Line 1",
+        "placeholder": "e.g. Jl. Ir. Jend. Soekarno No. 13"
+      },
+      "address2": {
+        "label": "Address Line 2",
+        "placeholder": "e.g. Apartment, Suite, Unit, etc."
+      },
+      "zipCode": {
+        "label": "Zip Code",
+        "placeholder": "e.g. 12345"
+      },
+      "phoneNumber": {
+        "label": "Phone Number",
+        "placeholder": "e.g. 081234567890"
+      },
+      "submit": "Update Contact"
+    }
+  },
+  "modalUpdateTaxInformation": {
+    "tooltip": {
+      "add": "Add Tax Information",
+      "update": "Update Tax Information"
+    },
+    "title": {
+      "add": "Add Tax Information",
+      "update": "Update Tax Information"
+    },
+    "form": {
+      "npwp": "NPWP",
+      "fgPpn": "FGPPN",
+      "nppkp": "NPPKP",
+      "submit": {
+        "add": "Add",
+        "update": "Update"
+      }
+    }
+  },
+  "modalListUsers": {
+    "title": "List Users",
+    "search": "Search users",
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "username": "Username"
+    },
+    "popconfirm": {
+      "title": "Remove Users",
+      "description": "Are you sure to remove these users?",
+      "text": {
+        "ok": "Yes",
+        "cancel": "No"
+      }
+    }
+  },
+  "modalAddUsers": {
+    "title": "Add Users",
+    "form": {
+      "users": {
+        "label": "Users",
+        "placeholder": "Select users (can be more than 1)",
+        "requiredMessage": "At least one user must be selected"
+      },
+      "submit": "Add Users"
+    }
+  }
+}

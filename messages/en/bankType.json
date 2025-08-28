@@ -1,0 +1,60 @@
+{
+  "bankTypePage": {
+    "title": "Bank Type Management",
+    "searchPlaceholder": "Search by name or bank code...",
+    "columns": {
+      "no": "No",
+      "name": "Name",
+      "bankCode": "Bank Code",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "action": "Action"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "tooltip": {
+      "activate": "Activate this bank type",
+      "deactivate": "Deactivate this bank type",
+      "delete": "Delete this bank type"
+    },
+    "popconfirm": {
+      "deleteTitle": "Are you sure you want to delete this bank type?",
+      "ok": "Yes",
+      "cancel": "No"
+    }
+  },
+  "BankTypeCreateModal": {
+    "button": "Add Bank Type",
+    "title": "Create Bank Type",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter bank type name"
+      },
+      "bankCode": {
+        "label": "Bank Code",
+        "placeholder": "Enter bank code"
+      },
+      "submit": "Submit"
+    }
+  },
+  "BankTypeUpdateModal": {
+    "tooltip": "Edit this bank type",
+    "title": "Updating bank type {name}",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter bank type name"
+      },
+      "bankCode": {
+        "label": "Bank Code",
+        "placeholder": "Enter bank code"
+      },
+      "submit": "Update"
+    }
+  }
+}

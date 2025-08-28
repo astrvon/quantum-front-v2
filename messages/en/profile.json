@@ -1,0 +1,35 @@
+{
+  "ProfilePage": {
+    "email": "Email",
+    "username": "Username",
+    "name": "Name",
+    "biodata": "Biodata",
+    "save": "Save",
+    "edit": "Edit"
+  },
+  "ModalUploadImage": {
+    "title": "Change Profile Picture",
+    "image": "Profile Image",
+    "drag": "Click or drag image to upload",
+    "onlyImage": "Only image files are allowed",
+    "submit": "Save"
+  },
+  "ModalEditProfile": {
+    "tooltip": "Edit Profile",
+    "button": "Edit Profile",
+    "title": "Updating profile",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "password": "Password",
+    "image": "Profile Image",
+    "namePlaceholder": "name (min: 6)",
+    "emailPlaceholder": "email",
+    "phonePlaceholder": "phone number",
+    "passwordPlaceholder": "password (min: 8)",
+    "generate": "Generate",
+    "drag": "Click or drag image to upload",
+    "onlyImage": "Only image files are allowed",
+    "submit": "Update Profile"
+  }
+}

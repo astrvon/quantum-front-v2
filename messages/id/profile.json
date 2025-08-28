@@ -1,0 +1,35 @@
+{
+  "ProfilePage": {
+    "email": "Email",
+    "username": "Nama Pengguna",
+    "name": "Nama",
+    "biodata": "Biodata",
+    "save": "Simpan",
+    "edit": "Ubah"
+  },
+  "ModalUploadImage": {
+    "title": "Ganti Foto Profil",
+    "image": "Foto Profil",
+    "drag": "Klik atau seret gambar untuk mengunggah",
+    "onlyImage": "Hanya file gambar yang diperbolehkan",
+    "submit": "Simpan"
+  },
+  "ModalEditProfile": {
+    "tooltip": "Edit Profil",
+    "button": "Edit Profil",
+    "title": "Perbarui profil",
+    "name": "Nama",
+    "email": "Email",
+    "phone": "Nomor HP",
+    "password": "Kata Sandi",
+    "image": "Foto Profil",
+    "namePlaceholder": "nama (min: 6)",
+    "emailPlaceholder": "email",
+    "phonePlaceholder": "nomor HP",
+    "passwordPlaceholder": "kata sandi (min: 8)",
+    "generate": "Acak",
+    "drag": "Klik atau seret gambar untuk mengunggah",
+    "onlyImage": "Hanya file gambar yang diperbolehkan",
+    "submit": "Perbarui Profil"
+  }
+}

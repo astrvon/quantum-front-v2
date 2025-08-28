@@ -1,0 +1,24 @@
+{
+  "vesselPhotoPage": {
+    "photos": "{count} Photos"
+  },
+  "vesselPhotoModal": {
+    "addTitle": "Add New Photo",
+    "updateTitle": "Update Photo",
+    "uploadImage": "Upload Image",
+    "uploadImageBase64": "Upload Image",
+    "uploadPlaceholder": "Drag & drop or click to upload",
+    "uploadNote": "Only image files are allowed",
+    "fieldName": "Name",
+    "fieldNamePlaceholder": "Photo name",
+    "fieldNameRequired": "Please enter photo name",
+    "fieldTakenAt": "Taken At",
+    "fieldDescription": "Description",
+    "fieldDescriptionPlaceholder": "Description",
+    "checkboxPanorama": "Panorama",
+    "checkboxCover": "Set as Cover Photo",
+    "buttonAdd": "Add Vessel Photo",
+    "buttonUpdate": "Update Vessel Photo",
+    "uploadRequired": "Please upload a photo"
+  }
+}

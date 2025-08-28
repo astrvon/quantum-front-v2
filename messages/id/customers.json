@@ -1,0 +1,258 @@
+{
+  "customersPage": {
+    "title": "Pelanggan",
+    "search": "Cari pelanggan",
+    "button": {
+      "add": "Tambah Pelanggan"
+    },
+    "tooltip": {
+      "delete": "Hapus",
+      "activate": "Aktifkan",
+      "deactivate": "Nonaktifkan"
+    },
+    "popconfirm": {
+      "title": { "delete": "Hapus Pelanggan" },
+      "description": {
+        "delete": "Apakah Anda yakin ingin menghapus pelanggan ini?"
+      },
+      "text": {
+        "delete": {
+          "ok": "Ya",
+          "cancel": "Tidak"
+        }
+      }
+    },
+    "table": {
+      "name": "Nama",
+      "bankAccount": "Rekening Bank",
+      "contact": "Kontak",
+      "taxInformation": "Informasi Pajak",
+      "users": "Pengguna",
+      "type": "Tipe",
+      "status": "Status",
+      "createdAt": "Dibuat Pada",
+      "updatedAt": "Diperbarui Pada",
+      "deletedAt": "Dihapus Pada",
+      "actions": "Aksi",
+      "data": {
+        "active": "Aktif",
+        "inactive": "Tidak Aktif"
+      }
+    }
+  },
+  "modalAddBankAccount": {
+    "title": "Tambah Rekening Bank",
+    "form": {
+      "holderName": "Nama Pemilik",
+      "accountNumber": "Nomor Rekening",
+      "bankType": { "label": "Jenis Bank", "placeholder": "Pilih jenis bank" },
+      "submit": "Tambah Rekening Bank"
+    },
+    "tooltip": {
+      "title": "Tambah Rekening Bank"
+    }
+  },
+  "modalAddCustomer": {
+    "button": "Tambah Pelanggan",
+    "title": "Tambah Pelanggan",
+    "form": {
+      "name": {
+        "label": "Nama",
+        "placeholder": "Masukkan nama pelanggan",
+        "requiredMessage": "Nama wajib diisi"
+      },
+      "type": {
+        "label": "Tipe Pelanggan",
+        "placeholder": "Pilih tipe pengguna (opsional)"
+      },
+      "city": {
+        "label": "Kota",
+        "placeholder": "Masukkan kota",
+        "requiredMessage": "Kota wajib diisi"
+      },
+      "address1": {
+        "label": "Alamat 1",
+        "placeholder": "contoh: Jl. Ir. Jend. Soekarno No. 13"
+      },
+      "address2": {
+        "label": "Alamat 2",
+        "placeholder": "contoh: Apartemen, Suite, Unit, dll."
+      },
+      "zipCode": {
+        "label": "Kode Pos",
+        "placeholder": "contoh: 12345"
+      },
+      "phoneNumber": {
+        "label": "Nomor Telepon",
+        "placeholder": "contoh: 081234567890",
+        "requiredMessage": "Nomor wajib diisi"
+      },
+      "submit": "Tambah Pelanggan"
+    }
+  },
+  "modalBankAccountDetail": {
+    "title": "Detail Rekening Bank",
+    "search": "Cari rekening bank",
+    "description": {
+      "holderName": "Nama Pemilik",
+      "accountNumber": "Nomor Rekening",
+      "status": {
+        "label": "Status",
+        "data": {
+          "active": "Aktif",
+          "inactive": "Tidak Aktif"
+        }
+      }
+    },
+    "tooltip": {
+      "status": {
+        "active": "Aktifkan",
+        "inactive": "Nonaktifkan"
+      },
+      "delete": "Hapus"
+    },
+    "popconfirm": {
+      "title": "Hapus Rekening Bank",
+      "description": "Apakah Anda yakin ingin menghapus rekening bank ini?",
+      "ok": "Ya",
+      "cancel": "Tidak"
+    }
+  },
+  "modalContactDetail": {
+    "title": "Detail Kontak",
+    "description": {
+      "name": "Nama",
+      "city": "Kota",
+      "address1": "Alamat 1",
+      "address2": "Alamat 2",
+      "zipCode": "Kode Pos",
+      "phoneNumber": "Nomor Telepon"
+    }
+  },
+  "modalTaxInformationDetail": {
+    "title": "Detail Informasi Pajak",
+    "description": {
+      "npwp": "NPWP",
+      "fgPpn": "FGPPN",
+      "nppkp": "NPPKP"
+    }
+  },
+  "modalUpdateBankAccount": {
+    "title": "Perbarui Rekening Bank",
+    "form": {
+      "holderName": "Nama Pemilik",
+      "accountNumber": "Nomor Rekening",
+      "bankType": { "label": "Jenis Bank", "placeholder": "Pilih jenis bank" },
+      "submit": "Perbarui"
+    }
+  },
+  "modalUpdateCustomer": {
+    "title": "Perbarui Pelanggan",
+    "tooltip": "Perbarui Pelanggan",
+    "form": {
+      "name": {
+        "label": "Nama",
+        "placeholder": "Masukkan nama pelanggan"
+      },
+      "type": {
+        "label": "Tipe Pelanggan",
+        "placeholder": "Pilih tipe pengguna (opsional)"
+      },
+      "city": {
+        "label": "Kota",
+        "placeholder": "Masukkan kota"
+      },
+      "address1": {
+        "label": "Alamat 1",
+        "placeholder": "contoh: Jl. Ir. Jend. Soekarno No. 13"
+      },
+      "address2": {
+        "label": "Alamat 2",
+        "placeholder": "contoh: Apartemen, Suite, Unit, dll."
+      },
+      "zipCode": {
+        "label": "Kode Pos",
+        "placeholder": "contoh: 12345"
+      },
+      "phoneNumber": {
+        "label": "Nomor Telepon",
+        "placeholder": "contoh: 081234567890"
+      },
+      "submit": "Perbarui Pelanggan"
+    }
+  },
+  "modalUpdateContact": {
+    "title": "Perbarui Kontak",
+    "form": {
+      "city": {
+        "label": "Kota",
+        "placeholder": "Masukkan kota"
+      },
+      "address1": {
+        "label": "Alamat 1",
+        "placeholder": "contoh: Jl. Ir. Jend. Soekarno No. 13"
+      },
+      "address2": {
+        "label": "Alamat 2",
+        "placeholder": "contoh: Apartemen, Suite, Unit, dll."
+      },
+      "zipCode": {
+        "label": "Kode Pos",
+        "placeholder": "contoh: 12345"
+      },
+      "phoneNumber": {
+        "label": "Nomor Telepon",
+        "placeholder": "contoh: 081234567890"
+      },
+      "submit": "Perbarui Kontak"
+    }
+  },
+  "modalUpdateTaxInformation": {
+    "tooltip": {
+      "add": "Tambah Informasi Pajak",
+      "update": "Perbarui Informasi Pajak"
+    },
+    "title": {
+      "add": "Tambah Informasi Pajak",
+      "update": "Perbarui Informasi Pajak"
+    },
+    "form": {
+      "npwp": "NPWP",
+      "fgPpn": "FGPPN",
+      "nppkp": "NPPKP",
+      "submit": {
+        "add": "Tambah",
+        "update": "Perbarui"
+      }
+    }
+  },
+  "modalListUsers": {
+    "button": "Pengguna",
+    "title": "Daftar Pengguna",
+    "search": "Cari pengguna",
+    "table": {
+      "name": "Nama",
+      "email": "Email",
+      "username": "Nama Pengguna"
+    },
+    "popconfirm": {
+      "title": "Hapus Pengguna",
+      "description": "Apakah Anda yakin ingin menghapus pengguna ini?",
+      "text": {
+        "ok": "Ya",
+        "cancel": "Tidak"
+      }
+    }
+  },
+  "modalAddUsers": {
+    "title": "Tambah Pengguna",
+    "form": {
+      "users": {
+        "label": "Pengguna",
+        "placeholder": "Pilih pengguna (bisa lebih dari 1)",
+        "requiredMessage": "Setidaknya satu pengguna harus dipilih"
+      },
+      "submit": "Tambah Pengguna"
+    }
+  }
+}

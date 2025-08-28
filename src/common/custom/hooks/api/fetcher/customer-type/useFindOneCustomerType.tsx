@@ -1,4 +1,4 @@
-import { IEndpointCustomerType } from "@/common/customHooks/api/endpoints/customer-type.endpoint.enum";
+import { IEndpointCustomerType } from "@/common/custom/hooks/api/endpoints/customer-type.endpoint.enum";
 import { ICustomerType } from "@/common/interfaces/data/customerType";
 
 import useHandleFetcher from "../../useHandleFetcher";

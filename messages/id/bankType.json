@@ -1,0 +1,60 @@
+{
+  "bankTypePage": {
+    "title": "Manajemen Tipe Bank",
+    "searchPlaceholder": "Cari berdasarkan nama atau kode bank...",
+    "columns": {
+      "no": "No",
+      "name": "Nama",
+      "bankCode": "Kode Bank",
+      "status": "Status",
+      "createdAt": "Dibuat Pada",
+      "updatedAt": "Diperbarui Pada",
+      "deletedAt": "Dihapus Pada",
+      "action": "Aksi"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Tidak Aktif"
+    },
+    "tooltip": {
+      "activate": "Aktifkan tipe bank ini",
+      "deactivate": "Nonaktifkan tipe bank ini",
+      "delete": "Hapus tipe bank ini"
+    },
+    "popconfirm": {
+      "deleteTitle": "Apakah kamu yakin ingin menghapus tipe bank ini?",
+      "ok": "Ya",
+      "cancel": "Tidak"
+    }
+  },
+  "BankTypeCreateModal": {
+    "button": "Tambah Tipe Bank",
+    "title": "Buat Tipe Bank",
+    "form": {
+      "name": {
+        "label": "Nama",
+        "placeholder": "Masukkan nama tipe bank"
+      },
+      "bankCode": {
+        "label": "Kode Bank",
+        "placeholder": "Masukkan kode bank"
+      },
+      "submit": "Simpan"
+    }
+  },
+  "BankTypeUpdateModal": {
+    "tooltip": "Edit tipe bank ini",
+    "title": "Perbarui tipe bank {name}",
+    "form": {
+      "name": {
+        "label": "Nama",
+        "placeholder": "Masukkan nama tipe bank"
+      },
+      "bankCode": {
+        "label": "Kode Bank",
+        "placeholder": "Masukkan kode bank"
+      },
+      "submit": "Perbarui"
+    }
+  }
+}

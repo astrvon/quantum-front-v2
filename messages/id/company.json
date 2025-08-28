@@ -1,0 +1,80 @@
+{
+  "companyPage": {
+    "title": "Daftar Perusahaan",
+    "searchPlaceholder": "Cari nama atau kode perusahaan...",
+    "columns": {
+      "no": "No",
+      "company_name": "Nama Perusahaan",
+      "company_code": "Kode Perusahaan",
+      "address": "Alamat",
+      "phone_number_1": "Nomor Telepon 1",
+      "phone_number_2": "Nomor Telepon 2",
+      "email": "Email",
+      "website": "Website",
+      "fax": "Faks",
+      "status": "Status",
+      "created_date": "Tanggal Dibuat",
+      "updated_date": "Tanggal Diperbarui",
+      "deleted_date": "Tanggal Dihapus",
+      "action": "Aksi"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Nonaktif"
+    },
+    "tooltip": {
+      "activate": "Aktifkan perusahaan",
+      "deactivate": "Nonaktifkan perusahaan",
+      "delete": "Hapus perusahaan"
+    },
+    "popconfirm": {
+      "deleteTitle": "Yakin ingin menghapus perusahaan ini?",
+      "ok": "Ya",
+      "cancel": "Batal"
+    }
+  },
+  "modalCompany": {
+    "button": {
+      "add": "Tambah Perusahaan"
+    },
+    "tooltip": {
+      "title": "Perbarui Perusahaan"
+    },
+    "title": "Buat Perusahaan Baru",
+    "form": {
+      "logo": "Logo",
+      "drag": "Klik atau seret gambar untuk mengunggah",
+      "onlyImage": "Hanya file gambar yang diperbolehkan",
+      "companyName": "Nama Perusahaan",
+      "companyCode": "Kode Perusahaan",
+      "category": "Kategori Perusahaan",
+      "address": "Alamat",
+      "phone1": "Nomor Telepon 1",
+      "phone2": "Nomor Telepon 2",
+      "fax": "Faks",
+      "email": "Email",
+      "website": "Situs Web",
+      "assignUser": "Pilih Pengguna",
+      "create": "Buat Perusahaan",
+      "update": "Perbarui Perusahaan",
+      "required": {
+        "companyName": "Nama perusahaan wajib diisi",
+        "companyCode": "Kode perusahaan wajib diisi",
+        "category": "Kategori wajib diisi",
+        "assignUser": "Harap pilih minimal satu pengguna"
+      },
+      "placeholder": {
+        "companyName": "Masukkan nama perusahaan",
+        "companyCode": "Masukkan kode perusahaan",
+        "category": "Pilih kategori",
+        "address": "Masukkan alamat",
+        "phone1": "Masukkan nomor telepon utama",
+        "phone2": "Masukkan nomor telepon kedua",
+        "fax": "Masukkan nomor faks",
+        "email": "Masukkan alamat email",
+        "website": "Masukkan URL website",
+        "assignUser": "Pilih pengguna"
+      }
+    }
+  }
+}

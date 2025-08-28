@@ -1,0 +1,54 @@
+{
+  "CustomerTypePage": {
+    "title": "Customer Type Management",
+    "placeholder": {
+      "search": "Search by name"
+    },
+    "columns": {
+      "no": "No.",
+      "name": "Name",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "action": "Action"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "tooltip": {
+      "activate": "Activate this customer type",
+      "deactivate": "Deactivate this customer type",
+      "delete": "Delete this customer type"
+    },
+    "popconfirm": {
+      "deleteTitle": "Are you sure you want to delete this customer type?",
+      "ok": "Yes",
+      "cancel": "No"
+    }
+  },
+  "CustomerTypeUpdateModal": {
+    "tooltip": "Edit customer type",
+    "title": "Updating customer type {name}",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Name (min: 6)"
+      },
+      "submit": "Update customer type"
+    }
+  },
+  "CustomerTypeCreateModal": {
+    "button": "Add customer type",
+    "title": "Create New customer type",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter customer type name",
+        "required": "Name is required"
+      },
+      "submit": "Create"
+    }
+  }
+}

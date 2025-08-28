@@ -1,0 +1,80 @@
+{
+  "companyPage": {
+    "title": "Company List",
+    "searchPlaceholder": "Search company name or code...",
+    "columns": {
+      "no": "No",
+      "company_name": "Company Name",
+      "company_code": "Company Code",
+      "address": "Address",
+      "phone_number_1": "Phone Number 1",
+      "phone_number_2": "Phone Number 2",
+      "email": "Email",
+      "website": "Website",
+      "fax": "Fax",
+      "status": "Status",
+      "created_date": "Created Date",
+      "updated_date": "Updated Date",
+      "deleted_date": "Deleted Date",
+      "action": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "tooltip": {
+      "activate": "Activate company",
+      "deactivate": "Deactivate company",
+      "delete": "Delete company"
+    },
+    "popconfirm": {
+      "deleteTitle": "Are you sure you want to delete this company?",
+      "ok": "Yes",
+      "cancel": "No"
+    }
+  },
+  "modalCompany": {
+    "button": {
+      "add": "Add Company"
+    },
+    "tooltip": {
+      "title": "Update Company"
+    },
+    "title": "Create New Company",
+    "form": {
+      "logo": "Logo",
+      "drag": "Click or drag image to upload",
+      "onlyImage": "Only image files are allowed",
+      "companyName": "Company Name",
+      "companyCode": "Company Code",
+      "category": "Company Category",
+      "address": "Address",
+      "phone1": "Phone Number 1",
+      "phone2": "Phone Number 2",
+      "fax": "Fax",
+      "email": "Email",
+      "website": "Website",
+      "assignUser": "Assign Users",
+      "create": "Create Company",
+      "update": "Update Company",
+      "required": {
+        "companyName": "Company Name is required",
+        "companyCode": "Company Code is required",
+        "category": "Category is required",
+        "assignUser": "Please assign at least one user"
+      },
+      "placeholder": {
+        "companyName": "Enter company name",
+        "companyCode": "Enter company code",
+        "category": "Select a category",
+        "address": "Enter address",
+        "phone1": "Enter primary phone number",
+        "phone2": "Enter secondary phone number",
+        "fax": "Enter fax number",
+        "email": "Enter email address",
+        "website": "Enter website URL",
+        "assignUser": "Select users"
+      }
+    }
+  }
+}

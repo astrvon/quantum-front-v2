@@ -1,0 +1,54 @@
+{
+  "CustomerTypePage": {
+    "title": "Manajemen Tipe Pelanggan",
+    "placeholder": {
+      "search": "Cari berdasarkan nama"
+    },
+    "columns": {
+      "no": "No.",
+      "name": "Nama",
+      "status": "Status",
+      "createdAt": "Dibuat Pada",
+      "updatedAt": "Diperbarui Pada",
+      "deletedAt": "Dihapus Pada",
+      "action": "Aksi"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Tidak Aktif"
+    },
+    "tooltip": {
+      "activate": "Aktifkan tipe pengguna ini",
+      "deactivate": "Nonaktifkan tipe pengguna ini",
+      "delete": "Hapus tipe pengguna ini"
+    },
+    "popconfirm": {
+      "deleteTitle": "Apakah Anda yakin ingin menghapus tipe pengguna ini?",
+      "ok": "Ya",
+      "cancel": "Tidak"
+    }
+  },
+  "CustomerTypeUpdateModal": {
+    "tooltip": "Edit tipe pengguna",
+    "title": "Memperbarui tipe pengguna {name}",
+    "form": {
+      "name": {
+        "label": "Nama",
+        "placeholder": "Nama (min: 6)"
+      },
+      "submit": "Perbarui Tipe Pengguna"
+    }
+  },
+  "CustomerTypeCreateModal": {
+    "button": "Tambah Tipe Pengguna",
+    "title": "Buat tipe pengguna baru",
+    "form": {
+      "name": {
+        "label": "Nama",
+        "placeholder": "Masukkan nama tipe pengguna",
+        "required": "Nama wajib diisi"
+      },
+      "submit": "Buat"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "userPage": {
+    "title": "Manajemen Pengguna",
+    "searchPlaceholder": "Cari berdasarkan nama, username, atau email",
+    "columns": {
+      "no": "No",
+      "name": "Nama",
+      "username": "Username",
+      "email": "Email",
+      "phoneNumber": "Nomor HP",
+      "status": "Status",
+      "role": "Peran",
+      "createdAt": "Dibuat",
+      "updatedAt": "Diperbarui",
+      "deletedAt": "Dihapus",
+      "action": "Aksi"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Tidak Aktif"
+    },
+    "tooltip": {
+      "activate": "Aktifkan",
+      "deactivate": "Nonaktifkan",
+      "delete": "Hapus"
+    },
+    "popconfirm": {
+      "deleteTitle": "Apakah kamu yakin ingin menghapus pengguna ini?",
+      "ok": "Ya",
+      "cancel": "Tidak"
+    },
+    "fallback": {
+      "email": "-",
+      "phoneNumber": "-",
+      "deletedAt": "-"
+    }
+  },
+  "ModalDetailUser": {
+    "title": "Detail Pengguna",
+    "section": {
+      "biodata": "Biodata",
+      "contact": "Informasi Kontak",
+      "taxProfile": "Profil Pajak",
+      "bankAccount": "Rekening Bank"
+    },
+    "fields": {
+      "name": "Nama",
+      "username": "Username",
+      "email": "Email",
+      "language": "Bahasa",
+      "status": "Status",
+      "createdAt": "Dibuat",
+      "updatedAt": "Diperbarui",
+      "deletedAt": "Dihapus",
+      "city": "Kota",
+      "address1": "Alamat 1",
+      "address2": "Alamat 2",
+      "phoneNumber": "Nomor Telepon",
+      "zipCode": "Kode Pos",
+      "npwp": "NPWP",
+      "fgPpn": "FG PPN",
+      "nppkp": "NPPKP",
+      "bank": "Bank",
+      "accountHolder": "Pemilik Rekening",
+      "accountNumber": "Nomor Rekening"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Tidak Aktif"
+    },
+    "boolean": {
+      "yes": "Ya",
+      "no": "Tidak"
+    },
+    "fallback": "-"
+  }
+}

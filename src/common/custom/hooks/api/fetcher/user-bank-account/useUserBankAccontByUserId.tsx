@@ -1,4 +1,4 @@
-import { IEndpointUserBankAccount } from "@/common/customHooks/api/endpoints/user-bank-account.endpoint.enum";
+import { IEndpointUserBankAccount } from "@/common/custom/hooks/api/endpoints/user-bank-account.endpoint.enum";
 import { IUserBankAccount } from "@/common/interfaces/data/userBankAccount";
 
 import useHandleFetcher from "../../useHandleFetcher";

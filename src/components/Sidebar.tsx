@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
 import { Layout, Menu, Button, Flex } from "antd";
-import type { MenuProps } from "antd";
+import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import {
   BsLayoutSidebar,
   BsGrid,
@@ -12,9 +13,10 @@ import {
   BsGear,
 } from "react-icons/bs";
 import { RiShip2Line } from "react-icons/ri";
-import Image from "next/image";
+
 import { useBreadcrumbStore } from "@/contexts/store/breadcrumbStore";
-import { usePathname, useRouter } from "next/navigation";
+
+import type { MenuProps } from "antd";
 
 const { Sider } = Layout;
 
@@ -27,59 +29,62 @@ export default function Sidebar() {
 
   const toggleCollapsed = () => setCollapsed((v) => !v);
 
-  const items: MenuProps["items"] = [
-    {
-      type: "group",
-      label: "Main",
-      children: [
-        { key: "/", icon: <BsGrid />, label: "Dashboard" },
-        {
-          key: "/vessels",
-          icon: <RiShip2Line />,
-          label: "Vessels",
-          children: [
-            { key: "/vessels/list", icon: <BsList />, label: "List" },
-            { key: "/vessels/add", icon: <BsPlus />, label: "Add Vessel" },
-          ],
-        },
-      ],
-    },
-    {
-      type: "group",
-      label: "Settings",
-      children: [
-        { key: "/profile", icon: <BsPerson />, label: "Profile" },
-        { key: "/settings", icon: <BsGear />, label: "Settings" },
-      ],
-    },
-  ];
+  const items: MenuProps["items"] = useMemo(
+    () => [
+      {
+        type: "group",
+        label: "Main",
+        children: [
+          { key: "/", icon: <BsGrid />, label: "Dashboard" },
+          {
+            key: "/vessels",
+            icon: <RiShip2Line />,
+            label: "Vessels",
+            children: [
+              { key: "/vessels/list", icon: <BsList />, label: "List" },
+              { key: "/vessels/add", icon: <BsPlus />, label: "Add Vessel" },
+            ],
+          },
+        ],
+      },
+      {
+        type: "group",
+        label: "Settings",
+        children: [
+          { key: "/profile", icon: <BsPerson />, label: "Profile" },
+          { key: "/settings", icon: <BsGear />, label: "Settings" },
+        ],
+      },
+    ],
+    []
+  );
 
-  const findBreadcrumb = (
-    key: string,
-    menuItems: MenuProps["items"]
-  ): string[] | null => {
-    for (const item of menuItems || []) {
-      if (!item) continue;
-      const hasLabel = "label" in item;
-      if (item.type === "group" && "children" in item && item.children) {
-        const res = findBreadcrumb(key, item.children);
-        if (res && hasLabel) return [item.label as string, ...res];
+  const findBreadcrumb = useCallback(
+    (key: string, menuItems: MenuProps["items"]): string[] | null => {
+      for (const item of menuItems || []) {
+        if (!item) continue;
+        const hasLabel = "label" in item;
+        if (item.type === "group" && "children" in item && item.children) {
+          const res = findBreadcrumb(key, item.children);
+          if (res && hasLabel) return [item.label as string, ...res];
+        }
+        if (item.key === key && hasLabel) return [item.label as string];
+        if ("children" in item && item.children) {
+          const res = findBreadcrumb(key, item.children);
+          if (res && hasLabel) return [item.label as string, ...res];
+        }
       }
-      if (item.key === key && hasLabel) return [item.label as string];
-      if ("children" in item && item.children) {
-        const res = findBreadcrumb(key, item.children);
-        if (res && hasLabel) return [item.label as string, ...res];
-      }
-    }
-    return null;
-  };
+      return null;
+    },
+    []
+  );
 
   useEffect(() => {
     const key = pathname || "/";
     setSelectedKey(key);
     const labels = findBreadcrumb(key, items) || [];
     setBreadcrumb(labels);
-  }, [pathname]);
+  }, [findBreadcrumb, items, pathname, setBreadcrumb]);
 
   return (
     <Sider

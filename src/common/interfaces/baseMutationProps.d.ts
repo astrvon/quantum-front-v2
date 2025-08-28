@@ -1,4 +1,4 @@
-import fetcherKey from "../customHooks/api/fetcher/fetchKey";
+import fetcherKey from "../custom/hooks/api/fetcher/fetchKey";
 
 /* To scale you just can put it right here
  */

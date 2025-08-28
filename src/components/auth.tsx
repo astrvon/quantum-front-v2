@@ -16,7 +16,10 @@ const HeaderAuth = () => (
       width={50}
       preview={false}
     />
-    <Typography.Title level={3} style={{ marginTop: 16 }}>
+    <Typography.Title
+      level={3}
+      style={{ marginTop: 16, color: "var(--foreground)" }}
+    >
       Start exploring the goodies.
     </Typography.Title>
   </div>
@@ -46,6 +49,7 @@ export const Auth = () => {
         label="Username"
         rules={[{ required: true, message: "Username is required" }]}
         required
+        style={{ color: "var(--foreground)" }}
       >
         <Input placeholder="Enter your username" />
       </Form.Item>
@@ -54,6 +58,7 @@ export const Auth = () => {
         label="Password"
         rules={[{ required: true, message: "Password is required" }]}
         required
+        style={{ color: "var(--foreground)" }}
       >
         <Input.Password placeholder="Enter your password" />
       </Form.Item>
@@ -65,7 +70,7 @@ export const Auth = () => {
 
   return (
     <Flex
-      style={{ height: "100vh", background: IThemeColor.Background }}
+      style={{ height: "100vh", background: "var(--background)" }}
       align="center"
       justify="center"
     >
@@ -73,7 +78,7 @@ export const Auth = () => {
         style={{
           width: 900,
           height: 500,
-          background: "#fff",
+          background: "var(--card-bg)",
           borderRadius: 12,
           overflow: "hidden",
           boxShadow: "0 8px 24px rgba(0, 0, 0, 0.1)",

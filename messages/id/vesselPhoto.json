@@ -1,0 +1,24 @@
+{
+  "vesselPhotoPage": {
+    "photos": "{count} Foto"
+  },
+  "vesselPhotoModal": {
+    "addTitle": "Tambah Foto Baru",
+    "updateTitle": "Perbarui Foto",
+    "uploadImage": "Unggah Gambar",
+    "uploadImageBase64": "Unggah Gambar",
+    "uploadPlaceholder": "Seret & letakkan atau klik untuk mengunggah",
+    "uploadNote": "Hanya file gambar yang diperbolehkan",
+    "fieldName": "Nama",
+    "fieldNamePlaceholder": "Nama foto",
+    "fieldNameRequired": "Silakan masukkan nama foto",
+    "fieldTakenAt": "Diambil Pada",
+    "fieldDescription": "Deskripsi",
+    "fieldDescriptionPlaceholder": "Deskripsi",
+    "checkboxPanorama": "Panorama",
+    "checkboxCover": "Jadikan Foto Sampul",
+    "buttonAdd": "Tambah Foto Kapal",
+    "buttonUpdate": "Perbarui Foto Kapal",
+    "uploadRequired": "Silakan unggah foto"
+  }
+}

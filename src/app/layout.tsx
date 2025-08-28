@@ -1,19 +1,24 @@
-import { loadMessages } from "@/common/lib/loadMessages";
+import "antd/dist/reset.css";
 import "./globals.css";
-import Dashboard from "@/components/Dashboard";
-import { ConfigProvider } from "antd";
-import type { ThemeConfig } from "antd";
 import { Metadata } from "next";
-import { getLocale } from "next-intl/server";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
+import { getLocale } from "next-intl/server";
+
+import { loadMessages } from "@/common/lib/loadMessages";
+import Dashboard from "@/components/Dashboard";
+
+import Provider from "./provider";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   applicationName: "System Management Service",
   title: "SMS Quantum",
   description: "SMS Quantum - System Management Service | Quantum Pesona Dunia",
 };
-
-const theme: ThemeConfig = {};
 
 export default async function RootLayout({
   children,
@@ -23,12 +28,16 @@ export default async function RootLayout({
   const locale = await getLocale();
   const messages = await loadMessages(locale);
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      lang={locale}
+      className={plusJakartaSans.className}
+      suppressHydrationWarning
+    >
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <ConfigProvider theme={theme}>
+          <Provider>
             <Dashboard>{children}</Dashboard>
-          </ConfigProvider>
+          </Provider>
         </NextIntlClientProvider>
       </body>
     </html>

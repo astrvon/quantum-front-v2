@@ -1,0 +1,64 @@
+{
+  "vesselTypePage": {
+    "title": "Tipe Kapal",
+    "searchPlaceholder": "Cari nama / kode tipe kapal...",
+    "columns": {
+      "no": "No",
+      "name": "Nama",
+      "vesselTypeCode": "Kode",
+      "description": "Deskripsi",
+      "lastNumber": "Nomor Terakhir",
+      "status": "Status",
+      "createdBy": "Dibuat Oleh",
+      "updatedBy": "Diperbarui Oleh",
+      "createdAt": "Dibuat Pada",
+      "updatedAt": "Diperbarui Pada",
+      "deletedAt": "Dihapus Pada",
+      "action": "Aksi"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Tidak Aktif"
+    },
+    "tooltip": {
+      "activate": "Aktifkan tipe kapal",
+      "deactivate": "Nonaktifkan tipe kapal",
+      "delete": "Hapus tipe kapal"
+    },
+    "popconfirm": {
+      "deleteTitle": "Apakah kamu yakin ingin menghapus tipe kapal ini?",
+      "ok": "Ya",
+      "cancel": "Batal"
+    }
+  },
+  "modalVesselType": {
+    "title": {
+      "add": "Tambah Jenis Kapal",
+      "update": "Perbarui Jenis Kapal"
+    },
+    "tooltip": {
+      "add": "Tambah Jenis Kapal",
+      "update": "Perbarui Jenis Kapal"
+    },
+    "form": {
+      "name": {
+        "label": "Nama",
+        "required": "Nama wajib diisi",
+        "placeholder": "Masukkan nama jenis kapal"
+      },
+      "vesselTypeCode": {
+        "label": "Kode",
+        "placeholder": "Masukkan kode jenis kapal"
+      },
+      "description": {
+        "label": "Deskripsi",
+        "placeholder": "Masukkan deskripsi"
+      },
+      "lastNumber": {
+        "label": "Nomor Terakhir",
+        "placeholder": "Masukkan nomor terakhir"
+      },
+      "submit": "Simpan"
+    }
+  }
+}
