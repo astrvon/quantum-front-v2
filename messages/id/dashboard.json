@@ -1,0 +1,21 @@
+{
+  "dashboardPage": {
+    "placeholder": {
+      "searchVessel": "Cari kapal..."
+    },
+    "title": {
+      "recentActivity": "Aktivitas Terbaru [contoh]"
+    },
+    "button": { "viewAll": "Lihat Semua" }
+  },
+  "selectTimePreset": {
+    "title": {
+      "1h": "1 Jam yang lalu",
+      "1d": "1 Hari yang lalu",
+      "1w": "1 Minggu yang lalu",
+      "1m": "1 Bulan yang lalu",
+      "2m": "2 Bulan yang lalu",
+      "3m": "3 Bulan yang lalu"
+    }
+  }
+}

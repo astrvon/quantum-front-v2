@@ -8,4 +8,5 @@ export enum StorageName {
   segmentedHomeStorage,
   windowPopupStorage,
   breadcrumbStorage,
+  recentStorage,
 }

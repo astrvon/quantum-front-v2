@@ -9,8 +9,6 @@ import {
   ISelectTimePresetValue,
   SelectTimePreset,
 } from "./_components/SelectTimePreset";
-import StatisticDashboard from "./_components/StatisticDashboard";
-import TotalCardDashboard from "./_components/TotalCardDashboard";
 
 export function DashboardPage() {
   const t = useTranslations("dashboardPage");
@@ -22,21 +20,19 @@ export function DashboardPage() {
 
   return (
     <Flex vertical gap={16}>
-      <TotalCardDashboard />
-      <StatisticDashboard />
-
-      <Flex gap={10}>
-        <SelectTimePreset
-          value={selectedTimePreset}
-          onChange={(val, range) => {
-            setSelectedTimePreset(val);
-            setStartDate(range.startDate);
-            setEndDate(range.endDate);
-          }}
-        />
-      </Flex>
-
-      <Card title={t("title.recentActivity")}>
+      <Card
+        title={t("title.recentActivity")}
+        extra={
+          <SelectTimePreset
+            value={selectedTimePreset}
+            onChange={(val, range) => {
+              setSelectedTimePreset(val);
+              setStartDate(range.startDate);
+              setEndDate(range.endDate);
+            }}
+          />
+        }
+      >
         <List
           dataSource={[
             "Evergreen completed voyage #12",

@@ -4,15 +4,19 @@ import { Layout, Menu, Button, Flex } from "antd";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { BsLayoutSidebar, BsGrid, BsList } from "react-icons/bs";
 import {
-  BsLayoutSidebar,
-  BsGrid,
-  BsPlus,
-  BsList,
-  BsPerson,
-  BsGear,
-} from "react-icons/bs";
+  FaBuilding,
+  FaCog,
+  FaCreditCard,
+  FaUserCircle,
+  FaUserCog,
+  FaUserLock,
+  FaUsers,
+  FaUserShield,
+} from "react-icons/fa";
 import { RiShip2Line } from "react-icons/ri";
+import { TbBrandDatabricks } from "react-icons/tb";
 
 import { useBreadcrumbStore } from "@/contexts/store/breadcrumbStore";
 
@@ -37,12 +41,40 @@ export default function Sidebar() {
         children: [
           { key: "/", icon: <BsGrid />, label: "Dashboard" },
           {
+            key: "/customers",
+            icon: <FaUsers />,
+            label: "Customers",
+            children: [
+              { key: "/customers", icon: <TbBrandDatabricks />, label: "List" },
+              { key: "/customers/type", icon: <BsList />, label: "Type" },
+            ],
+          },
+          { key: "/company", icon: <FaBuilding />, label: "Company" },
+          {
             key: "/vessels",
             icon: <RiShip2Line />,
-            label: "Vessels",
+            label: "Vessel",
             children: [
-              { key: "/vessels/list", icon: <BsList />, label: "List" },
-              { key: "/vessels/add", icon: <BsPlus />, label: "Add Vessel" },
+              { key: "/vessel", icon: <TbBrandDatabricks />, label: "List" },
+              { key: "/vessel/type", icon: <BsList />, label: "Type" },
+            ],
+          },
+          {
+            key: "/users",
+            icon: <FaUserShield />,
+            label: "Users",
+            children: [
+              {
+                key: "/users/accounts",
+                icon: <FaUserCog />,
+                label: "Accounts",
+              },
+              { key: "/users/roles", icon: <FaUserLock />, label: "Roles" },
+              {
+                key: "/users/bank-type",
+                icon: <FaCreditCard />,
+                label: "Bank Type",
+              },
             ],
           },
         ],
@@ -51,12 +83,22 @@ export default function Sidebar() {
         type: "group",
         label: "Settings",
         children: [
-          { key: "/profile", icon: <BsPerson />, label: "Profile" },
-          { key: "/settings", icon: <BsGear />, label: "Settings" },
+          {
+            key: "/settings",
+            icon: <FaCog />,
+            label: "Settings",
+            children: [
+              {
+                key: "/settings/profile",
+                icon: <FaUserCircle />,
+                label: "Profile",
+              },
+            ],
+          },
         ],
       },
     ],
-    []
+    [],
   );
 
   const findBreadcrumb = useCallback(
@@ -76,7 +118,7 @@ export default function Sidebar() {
       }
       return null;
     },
-    []
+    [],
   );
 
   useEffect(() => {

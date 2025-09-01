@@ -1,0 +1,21 @@
+{
+  "dashboardPage": {
+    "placeholder": {
+      "searchVessel": "Search vessel..."
+    },
+    "title": {
+      "recentActivity": "Recent Activity [example]"
+    },
+    "button": { "viewAll": "View All" }
+  },
+  "selectTimePreset": {
+    "title": {
+      "1h": "1 Hour ago",
+      "1d": "1 Day ago",
+      "1w": "1 Week ago",
+      "1m": "1 Month ago",
+      "2m": "2 Months ago",
+      "3m": "3 Months ago"
+    }
+  }
+}

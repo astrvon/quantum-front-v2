@@ -2,17 +2,24 @@
 
 import { UserOutlined } from "@ant-design/icons";
 import { Layout, Avatar, Dropdown, Space, Breadcrumb } from "antd";
-import React, { useState, useEffect } from "react";
-import { BsBell, BsGlobe } from "react-icons/bs";
+import dayjs from "dayjs";
+import React, { useState, useEffect, useMemo } from "react";
+// import { BsBell } from "react-icons/bs";
 import { PiDoorOpen } from "react-icons/pi";
 
+import { useAuthStore } from "@/contexts/store/authStore";
 import { useBreadcrumbStore } from "@/contexts/store/breadcrumbStore";
+
+import SearchModal from "./shared/modals/SearchModal";
+import { RefLangSwitch } from "./shared/RefLangSwitch";
 
 const { Header } = Layout;
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [dateTime, setDateTime] = useState(dayjs());
+  const { user, logout } = useAuthStore();
   const breadcrumb = useBreadcrumbStore((state) => state.breadcrumb);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,16 +29,24 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const userMenu = {
-    items: [{ key: "logout", icon: <PiDoorOpen />, label: "Logout" }],
-  };
+  useEffect(() => {
+    const interval = setInterval(() => setDateTime(dayjs()), 60000);
+    return () => clearInterval(interval);
+  }, []);
 
-  const languageMenu = {
-    items: [
-      { key: "en", label: "English" },
-      { key: "id", label: "Indonesia" },
-    ],
-  };
+  const userMenu = useMemo(
+    () => ({
+      items: [
+        {
+          key: "logout",
+          icon: <PiDoorOpen />,
+          label: "Logout",
+          onClick: logout,
+        },
+      ],
+    }),
+    [logout]
+  );
 
   return (
     <Header
@@ -53,7 +68,12 @@ export default function Navbar() {
     >
       <div style={{ display: "flex", flexDirection: "column" }}>
         <h1
-          style={{ fontSize: 18, fontWeight: 600, margin: 0, lineHeight: 1.3 }}
+          style={{
+            fontSize: 18,
+            fontWeight: 600,
+            margin: 0,
+            lineHeight: 1.3,
+          }}
         >
           System Management Service
         </h1>
@@ -61,19 +81,21 @@ export default function Navbar() {
       </div>
 
       <Space size="middle">
-        <span className="icon-hover">
-          <BsBell size={20} />
+        <span style={{ fontSize: 14, color: "#666" }}>
+          {dateTime.format("DD MMM YYYY, HH:mm")}
         </span>
-
-        <Dropdown menu={languageMenu} placement="bottomRight" arrow>
-          <span className="icon-hover">
-            <BsGlobe size={20} />
-          </span>
-        </Dropdown>
-
+        <SearchModal />
+        {/* <span className="icon-hover">
+          <BsBell size={20} />
+        </span> */}
+        <RefLangSwitch />
         <Dropdown menu={userMenu} placement="bottomRight" arrow>
           <span className="icon-hover">
-            <Avatar size="default" icon={<UserOutlined />} />
+            <Avatar
+              size="default"
+              src={user?.profileImage}
+              icon={<UserOutlined />}
+            />
           </span>
         </Dropdown>
       </Space>

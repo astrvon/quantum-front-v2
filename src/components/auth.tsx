@@ -4,17 +4,23 @@ import useLoginMutation, {
   ILoginMutationPayload,
   LoginSchemaPayload,
 } from "@/common/custom/hooks/api/mutation/auth/useLoginMutation";
-import { IThemeColor } from "@/common/interfaces/enum/ThemeColor.enum";
 import { setZodFormErrors } from "@/common/lib/setZodFormErrors";
 
 const HeaderAuth = () => (
   <div style={{ flex: 1, width: "100%" }}>
-    <Image
+    {/* <Image
       fallback="https://dummyimage.com/150x50/1e88e5/ffffff&text=Logo"
       src="/static/logo.png"
       alt="logo"
       width={50}
       preview={false}
+    /> */}
+    <Image
+      src="/static/logo_banner.png"
+      fallback="https://dummyimage.com/400x300/1e88e5/ffffff&text=Banner"
+      width={200}
+      preview={false}
+      alt="Banner"
     />
     <Typography.Title
       level={3}
@@ -70,7 +76,7 @@ export const Auth = () => {
 
   return (
     <Flex
-      style={{ height: "100vh", background: "var(--background)" }}
+      style={{ height: "100vh", background: "var(--secondary)" }}
       align="center"
       justify="center"
     >
@@ -78,7 +84,9 @@ export const Auth = () => {
         style={{
           width: 900,
           height: 500,
-          background: "var(--card-bg)",
+          // background: "var(--overlay)",
+          background:
+            "linear-gradient(-135deg, rgba(30, 60, 150, 0.5) 0%, rgba(0, 0, 25, 1) 100%)",
           borderRadius: 12,
           overflow: "hidden",
           boxShadow: "0 8px 24px rgba(0, 0, 0, 0.1)",
@@ -94,16 +102,25 @@ export const Auth = () => {
           align="center"
           justify="center"
           style={{
-            background: IThemeColor.Primary,
+            background: "var(--secondary)",
             height: "100%",
           }}
         >
-          <Image
+          {/* <Image
             src="/static/logo_banner.png"
             fallback="https://dummyimage.com/400x300/1e88e5/ffffff&text=Banner"
             width={400}
             preview={false}
             alt="Banner"
+          /> */}
+          <Image
+            fallback="https://dummyimage.com/150x50/1e88e5/ffffff&text=Logo"
+            src="/static/vessel-background.jpg"
+            alt="logo"
+            width="100%"
+            height="100%"
+            preview={false}
+            style={{ objectFit: "cover", objectPosition: "right" }}
           />
         </Flex>
       </Flex>
